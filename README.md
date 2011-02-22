@@ -13,6 +13,7 @@ Aether is that web management interface for our Chef server managed servers.  It
 
 ## Planned Features
 
+* A better auth system, possibly?
 * Manage servers (or clusters of servers) with a web interface
 * Monitor logs of the Chef runs from those servers (using [http://pusherapp.com][7])
 * Show estimated costs of servers
@@ -23,6 +24,10 @@ I currently only use this locally, and to get it going it needs a Chef knife con
 
 * Setup a `knife.rb` in `~/.chef/`
 * Start the Rails server
+
+## What does it desperately need?
+
+* Some design because it's ugly has hell right now!
 
 Links
 -----
