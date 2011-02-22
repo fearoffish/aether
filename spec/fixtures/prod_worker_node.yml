@@ -1,0 +1,1254 @@
+--- !ruby/object:Chef::Node 
+automatic_attrs: !map:Mash 
+  dmi: !map:Mash 
+    bios: !map:Mash {}
+
+    version: "2.9"
+  keys: !map:Mash 
+    ssh: !map:Mash 
+      host_dsa_public: AAAAB3NzaC1kc3MAAACBAN1nS+ioK4Our+TlXxgTHl9EpNEm+MCLp9qBOAPPp7hMTbDD0QehbRH0J6CBZw1Zx6RqHAbmE6lnPHSuZbSe9Dl8f807vY+JyPh1bqT3MTadZpXLS/BhxN3JP2wSJGAkiKhipvgkZP3sAua37etN9DUlqr7AxAd3NINkuUu29R2bAAAAFQDn9kwYF4IgOpnmsEGOsQMPSHXwYwAAAIEAybURiq7uFaeIWdtd5V8cBXCViwBJAjbB0AYxb+gJ/yS8GbSbvFBldBYVGkpD9GPBl9K3ZTXhkO6Cj+uJvIV6d6JnjyvBmfZm3PrjB0ajo9ILSB8IqU9ZNrsEmNYaNqbQN+1h//YtPH3b3EtVtdb8c4dFnYD+eR0nnpcg1XsoRo8AAACAYipWvlnXWpWNKv+Blcz6iZehm7A61pUoRgU/UlYBOr8T3e1gWvltBqm5cT/yS53eqPHo4DzUJkSFR94jKdYtn3rxtKTG6NgmR4ZDcna6iObqfeu6SC9dxVT2NrohbN9YWAq99surNV++IxrRpBACDNeiAkWBHXe6Qgh+hsD/GPg=
+      host_rsa_public: AAAAB3NzaC1yc2EAAAABIwAAAQEAte2MDRoRxjSCOdkkvuYAQk1tG6RykT043Zfb4k0e5Rs/2zR005rtDEbMxsFNrLr5vEm0a05FdExI25f1xo9KQJuq2VZnZZb3FmSnyRa3DSPCaR/oJwG1nAi0OjH6kib0g1mNHc7vIF/DdYOdEFxq6KXMF/H1ntR0NmXnt4+Wqe6kSHoezPkAhk4pcHyPWODyG6EdYJN49D2+j+U/tRzO0v2xjjqzZw/qDYJnP1KleqM+fxibuutEDqvbjAsK/IE6poILxqW2TVzqwFLGoTd7PmZdzZWCGNExHN/0NtcvwQfLdjWKOEAyVVq/JUhzhZA0KnsCYkROpL3fMciG5dNcOw==
+  kernel: !map:Mash 
+    modules: !map:Mash 
+      ipv6: !map:Mash 
+        size: "243163"
+        refcount: "12"
+    machine: i686
+    name: Linux
+    os: GNU/Linux
+    version: "#23-Ubuntu SMP Thu Dec 2 11:14:40 UTC 2010"
+    release: 2.6.32-311-ec2
+  fqdn: domU-12-31-39-01-C9-94.compute-1.internal
+  platform_version: "10.04"
+  filesystem: !map:Mash 
+    /dev/sda1: !map:Mash 
+      kb_size: "8256952"
+      kb_available: "6549052"
+      mount: /
+      percent_used: 17%
+      kb_used: "1288472"
+    proc: !map:Mash 
+      mount_options: 
+      - rw
+      - noexec
+      - nosuid
+      - nodev
+      fs_type: proc
+      mount: /proc
+    /dev/sda2: !map:Mash 
+      kb_size: "350891748"
+      kb_available: "332868100"
+      mount_options: 
+      - rw
+      - _netdev
+      fs_type: ext3
+      mount: /mnt
+      percent_used: 1%
+      kb_used: "199368"
+    none: !map:Mash 
+      kb_size: "890988"
+      kb_available: "890988"
+      mount_options: 
+      - rw
+      - nosuid
+      - mode=0755
+      fs_type: tmpfs
+      mount: /lib/init/rw
+      percent_used: 0%
+      kb_used: "0"
+    devtmpfs: !map:Mash 
+      kb_size: "873948"
+      kb_available: "873824"
+      mount_options: 
+      - rw
+      - mode=0755
+      fs_type: devtmpfs
+      mount: /dev
+      percent_used: 1%
+      kb_used: "124"
+    /dev/sdy1: !map:Mash 
+      kb_size: "103210940"
+      kb_available: "101589940"
+      mount_options: 
+      - rw
+      - _netdev
+      fs_type: ext3
+      mount: /a
+      percent_used: 1%
+      kb_used: "572424"
+  command: !map:Mash 
+    ps: ps -ef
+  ipaddress: 10.255.206.98
+  idletime_seconds: 342394
+  memory: !map:Mash 
+    dirty: 8kB
+    vmalloc_used: 5732kB
+    page_tables: 0kB
+    buffers: 81124kB
+    slab_unreclaim: 6608kB
+    high_free: 36732kB
+    vmalloc_chunk: 116712kB
+    nfs_unstable: 0kB
+    slab: 62864kB
+    inactive: 623324kB
+    total: 1781976kB
+    vmalloc_total: 122880kB
+    low_free: 551896kB
+    low_total: 735440kB
+    free: 588628kB
+    commit_limit: 1808484kB
+    anon_pages: 62228kB
+    writeback: 0kB
+    cached: 942212kB
+    swap: !map:Mash 
+      total: 917496kB
+      free: 917496kB
+      cached: 0kB
+    high_total: 1046536kB
+    committed_as: 130456kB
+    bounce: 0kB
+    slab_reclaimable: 56256kB
+    mapped: 8044kB
+    active: 462344kB
+  counters: !map:Mash 
+    network: !map:Mash 
+      interfaces: !map:Mash 
+        eql: !map:Mash 
+          tx: !map:Mash 
+            bytes: "0"
+            packets: "0"
+            collisions: "0"
+            queuelen: "5"
+            errors: "0"
+            carrier: "0"
+            overrun: "0"
+            drop: "0"
+          rx: !map:Mash 
+            bytes: "0"
+            packets: "0"
+            errors: "0"
+            overrun: "0"
+            drop: "0"
+            frame: "0"
+        ifb0: !map:Mash 
+          tx: !map:Mash 
+            bytes: "0"
+            packets: "0"
+            collisions: "0"
+            queuelen: "32"
+            errors: "0"
+            carrier: "0"
+            overrun: "0"
+            drop: "0"
+          rx: !map:Mash 
+            bytes: "0"
+            packets: "0"
+            errors: "0"
+            overrun: "0"
+            drop: "0"
+            frame: "0"
+        lo: !map:Mash 
+          tx: !map:Mash 
+            bytes: "644934"
+            packets: "10578"
+            collisions: "0"
+            queuelen: "0"
+            errors: "0"
+            carrier: "0"
+            overrun: "0"
+            drop: "0"
+          rx: !map:Mash 
+            bytes: "644934"
+            packets: "10578"
+            errors: "0"
+            overrun: "0"
+            drop: "0"
+            frame: "0"
+        ifb1: !map:Mash 
+          tx: !map:Mash 
+            bytes: "0"
+            packets: "0"
+            collisions: "0"
+            queuelen: "32"
+            errors: "0"
+            carrier: "0"
+            overrun: "0"
+            drop: "0"
+          rx: !map:Mash 
+            bytes: "0"
+            packets: "0"
+            errors: "0"
+            overrun: "0"
+            drop: "0"
+            frame: "0"
+        eth0: !map:Mash 
+          tx: !map:Mash 
+            bytes: "24558645"
+            packets: "153073"
+            collisions: "0"
+            queuelen: "1000"
+            errors: "0"
+            carrier: "0"
+            overrun: "0"
+            drop: "0"
+          rx: !map:Mash 
+            bytes: "333964735"
+            packets: "297731"
+            errors: "0"
+            overrun: "0"
+            drop: "0"
+            frame: "0"
+        dummy0: !map:Mash 
+          tx: !map:Mash 
+            bytes: "0"
+            packets: "0"
+            collisions: "0"
+            queuelen: "0"
+            errors: "0"
+            carrier: "0"
+            overrun: "0"
+            drop: "0"
+          rx: !map:Mash 
+            bytes: "0"
+            packets: "0"
+            errors: "0"
+            overrun: "0"
+            drop: "0"
+            frame: "0"
+  domain: compute-1.internal
+  os: linux
+  idletime: 3 days 23 hours 06 minutes 34 seconds
+  virtualization: !map:Mash 
+    role: guest
+    emulator: xen
+  network: !map:Mash 
+    default_interface: eth0
+    interfaces: !map:Mash 
+      eql: !map:Mash 
+        mtu: "576"
+        encapsulation: Serial
+      ifb0: !map:Mash 
+        flags: 
+        - BROADCAST
+        - NOARP
+        number: "0"
+        addresses: !map:Mash 
+          8e:d4:64:ef:54:77: !map:Mash 
+            family: lladdr
+        mtu: "1500"
+        type: ifb
+        encapsulation: Ethernet
+      lo: !map:Mash 
+        flags: 
+        - UP
+        - LOOPBACK
+        - RUNNING
+        addresses: !map:Mash 
+          "::1": !map:Mash 
+            scope: Node
+            prefixlen: "128"
+            family: inet6
+          127.0.0.1: !map:Mash 
+            netmask: 255.0.0.0
+            family: inet
+        mtu: "16436"
+        encapsulation: Loopback
+      ifb1: !map:Mash 
+        flags: 
+        - BROADCAST
+        - NOARP
+        number: "1"
+        addresses: !map:Mash 
+          52:40:3d:07:78:96: !map:Mash 
+            family: lladdr
+        mtu: "1500"
+        type: ifb
+        encapsulation: Ethernet
+      eth0: !map:Mash 
+        flags: 
+        - UP
+        - BROADCAST
+        - RUNNING
+        - MULTICAST
+        number: "0"
+        addresses: !map:Mash 
+          fe80::1031:39ff:fe01:c894: !map:Mash 
+            scope: Link
+            prefixlen: "64"
+            family: inet6
+          12:31:38:01:c9:94: !map:Mash 
+            family: lladdr
+          10.255.206.98: !map:Mash 
+            netmask: 255.255.254.0
+            broadcast: 10.255.207.255
+            family: inet
+        mtu: "1500"
+        type: eth
+        arp: !map:Mash 
+          10.255.206.1: fe:ff:ff:ff:ff:ff
+        encapsulation: Ethernet
+      dummy0: !map:Mash 
+        flags: 
+        - BROADCAST
+        - NOARP
+        number: "0"
+        addresses: !map:Mash 
+          36:b0:80:94:55:87: !map:Mash 
+            family: lladdr
+        mtu: "1500"
+        type: dummy
+        encapsulation: Ethernet
+  lsb: !map:Mash 
+    codename: lucid
+    id: Ubuntu
+    description: "\"Ubuntu 10.04.1 LTS\""
+    release: "10.04"
+  ohai_time: 1296752951.09727
+  current_user: 
+  chef_packages: !map:Mash 
+    ohai: !map:Mash 
+      version: 0.5.8
+    chef: !map:Mash 
+      version: 0.9.12
+  recipes: 
+  - apt
+  - build-essential
+  - dnssd
+  - xfs
+  - full_node_name
+  - chef::bootstrap_client
+  - chef::delete_validation
+  - timezone
+  - users::sysadmins
+  - users::deployers
+  - users::rvm
+  - users::tools
+  - users::postgres
+  - bash-profile
+  - sudo
+  - git
+  - xml
+  - aws
+  - aws_pharmmd::storage
+  - bundler
+  - postgres
+  - application
+  - redis::app_config
+  - resque::app_config
+  - prince
+  - application_pharmmd
+  - bluepill
+  - resque
+  - redis
+  os_version: 2.6.32-311-ec2
+  languages: !map:Mash 
+    c: !map:Mash 
+      sunpro: !map:Mash 
+        version: to
+        description: "cc: error trying to exec 'i486-linux-gnu-gcc--flags': execvp: No such file or directory"
+      glibc: !map:Mash 
+        version: 2.11.1
+        description: GNU C Library (Ubuntu EGLIBC 2.11.1-0ubuntu7.7) stable release version 2.11.1, by Roland McGrath et al.
+      gcc: !map:Mash 
+        version: 4.4.3
+        description: "gcc version 4.4.3 (Ubuntu 4.4.3-4ubuntu5) "
+    java: !map:Mash 
+      hotspot: !map:Mash 
+        name: OpenJDK Client VM
+        build: 19.0-b09, mixed mode, sharing
+      version: 1.6.0_20
+    perl: !map:Mash 
+      version: 5.10.1
+      archname: i486-linux-gnu-thread-multi
+    python: !map:Mash 
+      version: 2.6.5
+      builddate: Apr 16 2010, 13:09:56
+    ruby: !map:Mash 
+      target_os: linux
+      bin_dir: /usr/bin
+      target_vendor: pc
+      host_vendor: pc
+      target_cpu: i486
+      ruby_bin: /usr/bin/ruby1.8
+      version: 1.8.7
+      host_os: linux-gnu
+      host: i486-pc-linux-gnu
+      target: i486-pc-linux-gnu
+      release_date: "2010-01-10"
+      host_cpu: i486
+      gems_dir: /usr/lib/ruby/gems/1.8
+      platform: i486-linux
+  cpu: !map:Mash 
+    real: 2
+    total: 2
+    "0": !map:Mash 
+      flags: 
+      - fpu
+      - tsc
+      - msr
+      - pae
+      - mce
+      - cx8
+      - apic
+      - mca
+      - cmov
+      - pat
+      - pse36
+      - clflush
+      - dts
+      - acpi
+      - mmx
+      - fxsr
+      - sse
+      - sse2
+      - ss
+      - ht
+      - tm
+      - pbe
+      - nx
+      - lm
+      - constant_tsc
+      - arch_perfmon
+      - pebs
+      - bts
+      - aperfmperf
+      - pni
+      - dtes64
+      - monitor
+      - ds_cpl
+      - vmx
+      - est
+      - tm2
+      - ssse3
+      - cx16
+      - xtpr
+      - pdcm
+      - dca
+      - lahf_lm
+      - tpr_shadow
+      - vnmi
+      - flexpriority
+      cores: "1"
+      model: "15"
+      core_id: "0"
+      model_name: Intel(R) Xeon(R) CPU           E5345  @ 2.33GHz
+      family: "6"
+      physical_id: "0"
+      mhz: "2327.498"
+      vendor_id: GenuineIntel
+      cache_size: 4096 KB
+      stepping: "11"
+    "1": !map:Mash 
+      flags: 
+      - fpu
+      - tsc
+      - msr
+      - pae
+      - mce
+      - cx8
+      - apic
+      - mca
+      - cmov
+      - pat
+      - pse36
+      - clflush
+      - dts
+      - acpi
+      - mmx
+      - fxsr
+      - sse
+      - sse2
+      - ss
+      - ht
+      - tm
+      - pbe
+      - nx
+      - lm
+      - constant_tsc
+      - arch_perfmon
+      - pebs
+      - bts
+      - aperfmperf
+      - pni
+      - dtes64
+      - monitor
+      - ds_cpl
+      - vmx
+      - est
+      - tm2
+      - ssse3
+      - cx16
+      - xtpr
+      - pdcm
+      - dca
+      - lahf_lm
+      - tpr_shadow
+      - vnmi
+      - flexpriority
+      cores: "1"
+      model: "15"
+      core_id: "0"
+      model_name: Intel(R) Xeon(R) CPU           E5345  @ 2.33GHz
+      family: "6"
+      physical_id: "1"
+      mhz: "2327.498"
+      vendor_id: GenuineIntel
+      cache_size: 4096 KB
+      stepping: "11"
+  uptime: 2 days 00 hours 20 minutes 43 seconds
+  hostname: domU-12-31-39-01-C9-84
+  roles: 
+  - application_pharmmd
+  - workers_master
+  - workers_master_pharmmd
+  - workers_pharmmd
+  - workers
+  - base
+  - prod
+  etc: !map:Mash 
+    group: !map:Mash 
+      utmp: !map:Mash 
+        gid: 43
+        members: []
+
+      dip: !map:Mash 
+        gid: 30
+        members: 
+        - ubuntu
+      audio: !map:Mash 
+        gid: 29
+        members: 
+        - ubuntu
+      uucp: !map:Mash 
+        gid: 10
+        members: []
+
+      syslog: !map:Mash 
+        gid: 103
+        members: []
+
+      nogroup: !map:Mash 
+        gid: 65534
+        members: []
+
+      games: !map:Mash 
+        gid: 60
+        members: []
+
+      list: !map:Mash 
+        gid: 38
+        members: []
+
+      kmem: !map:Mash 
+        gid: 15
+        members: []
+
+      jamievandyke: !map:Mash 
+        gid: 4002
+        members: []
+
+      shadow: !map:Mash 
+        gid: 42
+        members: []
+
+      sudo: !map:Mash 
+        gid: 27
+        members: []
+
+      sys: !map:Mash 
+        gid: 3
+        members: []
+
+      tty: !map:Mash 
+        gid: 5
+        members: []
+
+      sysadmin: !map:Mash 
+        gid: 2300
+        members: 
+        - jamievandyke
+        - hortoncd
+        - mattsmith
+        - javaman7177
+      avahi: !map:Mash 
+        gid: 112
+        members: []
+
+      netdev: !map:Mash 
+        gid: 111
+        members: []
+
+      admin: !map:Mash 
+        gid: 110
+        members: 
+        - ubuntu
+      libuuid: !map:Mash 
+        gid: 101
+        members: []
+
+      staff: !map:Mash 
+        gid: 50
+        members: []
+
+      src: !map:Mash 
+        gid: 40
+        members: []
+
+      irc: !map:Mash 
+        gid: 39
+        members: []
+
+      backup: !map:Mash 
+        gid: 34
+        members: []
+
+      www-data: !map:Mash 
+        gid: 33
+        members: []
+
+      tape: !map:Mash 
+        gid: 26
+        members: []
+
+      man: !map:Mash 
+        gid: 12
+        members: []
+
+      lp: !map:Mash 
+        gid: 7
+        members: []
+
+      tools: !map:Mash 
+        gid: 2500
+        members: 
+        - hudson
+      landscape: !map:Mash 
+        gid: 109
+        members: []
+
+      haldaemon: !map:Mash 
+        gid: 108
+        members: []
+
+      messagebus: !map:Mash 
+        gid: 107
+        members: []
+
+      fuse: !map:Mash 
+        gid: 104
+        members: []
+
+      proxy: !map:Mash 
+        gid: 13
+        members: []
+
+      mail: !map:Mash 
+        gid: 8
+        members: []
+
+      mattsmith: !map:Mash 
+        gid: 4003
+        members: []
+
+      operator: !map:Mash 
+        gid: 37
+        members: []
+
+      cdrom: !map:Mash 
+        gid: 24
+        members: 
+        - ubuntu
+      root: !map:Mash 
+        gid: 0
+        members: []
+
+      postgres: !map:Mash 
+        gid: 4007
+        members: []
+
+      deploy: !map:Mash 
+        gid: 2400
+        members: 
+        - jamievandyke
+        - hortoncd
+        - deploy
+        - javaman7177
+      hudson: !map:Mash 
+        gid: 4005
+        members: []
+
+      plugdev: !map:Mash 
+        gid: 46
+        members: 
+        - ubuntu
+      sasl: !map:Mash 
+        gid: 45
+        members: []
+
+      video: !map:Mash 
+        gid: 44
+        members: 
+        - ubuntu
+      fax: !map:Mash 
+        gid: 21
+        members: []
+
+      bin: !map:Mash 
+        gid: 2
+        members: []
+
+      ssh: !map:Mash 
+        gid: 106
+        members: []
+
+      users: !map:Mash 
+        gid: 100
+        members: []
+
+      news: !map:Mash 
+        gid: 9
+        members: []
+
+      daemon: !map:Mash 
+        gid: 1
+        members: []
+
+      javaman7177: !map:Mash 
+        gid: 4006
+        members: []
+
+      redis: !map:Mash 
+        gid: 113
+        members: []
+
+      rvm: !map:Mash 
+        gid: 2401
+        members: 
+        - jamievandyke
+        - hortoncd
+        - mattsmith
+        - hudson
+        - deploy
+        - javaman7177
+      hortoncd: !map:Mash 
+        gid: 4004
+        members: []
+
+      ubuntu: !map:Mash 
+        gid: 1000
+        members: []
+
+      mlocate: !map:Mash 
+        gid: 105
+        members: []
+
+      crontab: !map:Mash 
+        gid: 102
+        members: []
+
+      gnats: !map:Mash 
+        gid: 41
+        members: []
+
+      floppy: !map:Mash 
+        gid: 25
+        members: 
+        - ubuntu
+      voice: !map:Mash 
+        gid: 22
+        members: []
+
+      disk: !map:Mash 
+        gid: 6
+        members: []
+
+      dialout: !map:Mash 
+        gid: 20
+        members: 
+        - ubuntu
+      adm: !map:Mash 
+        gid: 4
+        members: 
+        - ubuntu
+    passwd: !map:Mash 
+      uucp: !map:Mash 
+        dir: /var/spool/uucp
+        gid: 10
+        gecos: uucp
+        uid: 10
+        shell: /bin/sh
+      syslog: !map:Mash 
+        dir: /home/syslog
+        gid: 103
+        gecos: ""
+        uid: 101
+        shell: /bin/false
+      list: !map:Mash 
+        dir: /var/list
+        gid: 38
+        gecos: Mailing List Manager
+        uid: 38
+        shell: /bin/sh
+      games: !map:Mash 
+        dir: /usr/games
+        gid: 60
+        gecos: games
+        uid: 5
+        shell: /bin/sh
+      jamievandyke: !map:Mash 
+        dir: /home/jamievandyke
+        gid: 4002
+        gecos: Jamie van Dyke
+        uid: 4002
+        shell: /bin/bash
+      sys: !map:Mash 
+        dir: /dev
+        gid: 3
+        gecos: sys
+        uid: 3
+        shell: /bin/sh
+      nobody: !map:Mash 
+        dir: /nonexistent
+        gid: 65534
+        gecos: nobody
+        uid: 65534
+        shell: /bin/sh
+      avahi: !map:Mash 
+        dir: /var/run/avahi-daemon
+        gid: 112
+        gecos: Avahi mDNS daemon,,,
+        uid: 106
+        shell: /bin/false
+      libuuid: !map:Mash 
+        dir: /var/lib/libuuid
+        gid: 101
+        gecos: ""
+        uid: 100
+        shell: /bin/sh
+      irc: !map:Mash 
+        dir: /var/run/ircd
+        gid: 39
+        gecos: ircd
+        uid: 39
+        shell: /bin/sh
+      backup: !map:Mash 
+        dir: /var/backups
+        gid: 34
+        gecos: backup
+        uid: 34
+        shell: /bin/sh
+      www-data: !map:Mash 
+        dir: /var/www
+        gid: 33
+        gecos: www-data
+        uid: 33
+        shell: /bin/sh
+      lp: !map:Mash 
+        dir: /var/spool/lpd
+        gid: 7
+        gecos: lp
+        uid: 7
+        shell: /bin/sh
+      man: !map:Mash 
+        dir: /var/cache/man
+        gid: 12
+        gecos: man
+        uid: 6
+        shell: /bin/sh
+      landscape: !map:Mash 
+        dir: /var/lib/landscape
+        gid: 109
+        gecos: ""
+        uid: 105
+        shell: /bin/false
+      haldaemon: !map:Mash 
+        dir: /var/run/hald
+        gid: 108
+        gecos: Hardware abstraction layer,,,
+        uid: 103
+        shell: /bin/false
+      messagebus: !map:Mash 
+        dir: /var/run/dbus
+        gid: 107
+        gecos: ""
+        uid: 102
+        shell: /bin/false
+      proxy: !map:Mash 
+        dir: /bin
+        gid: 13
+        gecos: proxy
+        uid: 13
+        shell: /bin/sh
+      mail: !map:Mash 
+        dir: /var/mail
+        gid: 8
+        gecos: mail
+        uid: 8
+        shell: /bin/sh
+      sync: !map:Mash 
+        dir: /bin
+        gid: 65534
+        gecos: sync
+        uid: 4
+        shell: /bin/sync
+      mattsmith: !map:Mash 
+        dir: /home/mattsmith
+        gid: 4003
+        gecos: Matt Smith
+        uid: 4003
+        shell: /bin/bash
+      sshd: !map:Mash 
+        dir: /var/run/sshd
+        gid: 65534
+        gecos: ""
+        uid: 104
+        shell: /usr/sbin/nologin
+      root: !map:Mash 
+        dir: /root
+        gid: 0
+        gecos: root
+        uid: 0
+        shell: /bin/bash
+      postgres: !map:Mash 
+        dir: /home/postgres
+        gid: 4007
+        gecos: Postgres User
+        uid: 4006
+        shell: /bin/bash
+      deploy: !map:Mash 
+        dir: /home/deploy
+        gid: 2400
+        gecos: Deploy User
+        uid: 4001
+        shell: /bin/bash
+      hudson: !map:Mash 
+        dir: /home/hudson
+        gid: 4005
+        gecos: Hudson CI Server User
+        uid: 4005
+        shell: /bin/bash
+      bin: !map:Mash 
+        dir: /bin
+        gid: 2
+        gecos: bin
+        uid: 2
+        shell: /bin/sh
+      news: !map:Mash 
+        dir: /var/spool/news
+        gid: 9
+        gecos: news
+        uid: 9
+        shell: /bin/sh
+      daemon: !map:Mash 
+        dir: /usr/sbin
+        gid: 1
+        gecos: daemon
+        uid: 1
+        shell: /bin/sh
+      javaman7177: !map:Mash 
+        dir: /home/javaman7177
+        gid: 4006
+        gecos: Les Horne
+        uid: 4010
+        shell: /bin/bash
+      redis: !map:Mash 
+        dir: /var/lib/redis
+        gid: 113
+        gecos: redis server,,,
+        uid: 107
+        shell: /bin/false
+      hortoncd: !map:Mash 
+        dir: /home/hortoncd
+        gid: 4004
+        gecos: Chris Horton
+        uid: 4004
+        shell: /bin/bash
+      ubuntu: !map:Mash 
+        dir: /home/ubuntu
+        gid: 1000
+        gecos: Ubuntu,,,
+        uid: 1000
+        shell: /bin/bash
+      gnats: !map:Mash 
+        dir: /var/lib/gnats
+        gid: 41
+        gecos: Gnats Bug-Reporting System (admin)
+        uid: 41
+        shell: /bin/sh
+  ec2: !map:Mash 
+    public_hostname: ec2-75-101-178-244.compute-1.amazonaws.com
+    placement_availability_zone: us-east-1d
+    block_device_mapping_root: /dev/sda1
+    public_keys_0_openssh_key: |
+      ssh-rsa AAAAB3NzaC1yc2EAAAADAQACAAABAQCgfW3MaiU8zoJcGJ1YAZN3sUDCxv8nRQafYenbUztm8eCWAVXS9YB8Mm0FcqJaejER+Z+zuoH59eT3opH//UEtnmjyJLzltZjIgx+eyPeDUl4qXLRCD8kf7bOEiZrUwAVsiZM2AZ/G9lN8kU3zoeq5xDDzvmyZwsCR18fGGNUOyLrpMHivd3Kacc7gFHgyEHGxCF7sIQOQ6U67vyxga8H6SOTuPIWWm62C2I28j0M30GPludE3c5e/q2gReVpLmqe1KPsG+Bnl8enz0C/MqIXZCGMhxV9oK0pMVXN3LidpPgOa25yxhcmti9dPzIOlVvZwugW74eLggooVMhnlIdFr SharePoint
+
+    instance_id: i-e165ed8d
+    instance_type: c1.medium
+    local_ipv4: 10.255.206.98
+    block_device_mapping_ephemeral0: /dev/sda2
+    reservation_id: r-b68077db
+    public_ipv4: 75.101.188.244
+    local_hostname: domU-12-31-39-01-C9-94.compute-1.internal
+    kernel_id: aki-3af50453
+    hostname: domU-12-31-39-01-C9-94.compute-1.internal
+    block_device_mapping_swap: sda3
+    ami_id: ami-a2f405cb
+    userdata: 
+    security_groups: 
+    - aws_workers
+    block_device_mapping_ami: /dev/sda1
+    ami_manifest_path: (unknown)
+    ami_launch_index: "0"
+  macaddress: 12:31:39:01:d9:94
+  block_device: !map:Mash 
+    ram13: !map:Mash 
+      size: "131072"
+      removable: "0"
+    ram0: !map:Mash 
+      size: "131072"
+      removable: "0"
+    sda1: !map:Mash 
+      size: "16777216"
+      removable: "0"
+    loop0: !map:Mash 
+      size: "0"
+      removable: "0"
+    ram14: !map:Mash 
+      size: "131072"
+      removable: "0"
+    ram1: !map:Mash 
+      size: "131072"
+      removable: "0"
+    sda2: !map:Mash 
+      size: "712971264"
+      removable: "0"
+    loop1: !map:Mash 
+      size: "0"
+      removable: "0"
+    ram15: !map:Mash 
+      size: "131072"
+      removable: "0"
+    ram2: !map:Mash 
+      size: "131072"
+      removable: "0"
+    sda3: !map:Mash 
+      size: "1835008"
+      removable: "0"
+    loop2: !map:Mash 
+      size: "0"
+      removable: "0"
+    ram3: !map:Mash 
+      size: "131072"
+      removable: "0"
+    loop3: !map:Mash 
+      size: "0"
+      removable: "0"
+    ram4: !map:Mash 
+      size: "131072"
+      removable: "0"
+    loop4: !map:Mash 
+      size: "0"
+      removable: "0"
+    ram5: !map:Mash 
+      size: "131072"
+      removable: "0"
+    loop5: !map:Mash 
+      size: "0"
+      removable: "0"
+    ram6: !map:Mash 
+      size: "131072"
+      removable: "0"
+    loop6: !map:Mash 
+      size: "0"
+      removable: "0"
+    ram10: !map:Mash 
+      size: "131072"
+      removable: "0"
+    ram7: !map:Mash 
+      size: "131072"
+      removable: "0"
+    sdy: !map:Mash 
+      size: "209715200"
+      removable: "0"
+    loop7: !map:Mash 
+      size: "0"
+      removable: "0"
+    ram11: !map:Mash 
+      size: "131072"
+      removable: "0"
+    ram8: !map:Mash 
+      size: "131072"
+      removable: "0"
+    ram12: !map:Mash 
+      size: "131072"
+      removable: "0"
+    ram9: !map:Mash 
+      size: "131072"
+      removable: "0"
+  uptime_seconds: 174043
+  cloud: !map:Mash 
+    public_ips: 
+    - 75.101.188.244
+    private_ips: 
+    - 10.255.206.98
+    provider: ec2
+  platform: ubuntu
+cookbook_collection: !map:Chef::CookbookCollection {}
+
+couchdb: !ruby/object:Chef::CouchDB 
+  db: chef
+  rest: !ruby/object:Chef::REST 
+    auth_credentials: !ruby/object:Chef::REST::AuthCredentials 
+      client_name: 
+      key_file: 
+    cookies: !map:Chef::REST::CookieJar {}
+
+    default_headers: {}
+
+    redirect_limit: 10
+    redirects_followed: 0
+    sign_on_redirect: true
+    sign_request: true
+    url: http://localhost:5984
+couchdb_id: 
+couchdb_rev: 180-f389958b581faffd66064816159436de
+default_attrs: !map:Mash 
+  apps: !map:Mash 
+    pharmmd: !map:Mash 
+      prod: !map:Mash 
+        run_migrations: false
+  app_storage: !map:Mash 
+    device: sdy
+    size: 100
+    mountpoint: /a
+    fstype: ext3
+    run_file: /var/run/app_storage_config
+  rails: !map:Mash 
+    version: 2.3.4
+  bash: !map:Mash 
+    path: /opt/ruby-enterprise/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+  app_eip: !map:Mash 
+    run_file: /var/run/app_eip_config
+  couchdb: !map:Mash 
+    max_document_size: "4294967296"
+    port: "5984"
+    version: 0.10.0-1ubuntu2
+    bind_address: 127.0.0.1
+  nginx: !map:Mash 
+    worker_connections: 2048
+    gzip_types: 
+    - text/plain
+    - application/x-javascript
+    - text/xml
+    - application/xml
+    - application/xml+rss
+    - text/javascript
+    configure_flags: 
+    - --prefix=/opt/nginx-0.7.67
+    - --conf-path=/etc/nginx/nginx.conf
+    - --with-http_ssl_module
+    - --with-http_gzip_static_module
+    server_names_hash_bucket_size: 64
+    gzip_min_length: "500"
+    use_epoll: true
+    gzip_comp_level: "2"
+    gzip_proxied: any
+    version: 0.7.67
+    worker_processes: 2
+    gzip_http_version: "1.0"
+    gzip: "on"
+    src_binary: /opt/nginx-0.7.67/sbin/nginx
+    install_path: /opt/nginx-0.7.67
+    use_kqueue: false
+    accept_mutex: "on"
+    keepalive_timeout: 65
+    keepalive: "on"
+  db_storage: !map:Mash 
+    device: sdz
+    slice_size: 100
+    size: 500
+    mountpoint: /db
+    raid_level: "10"
+    md_device: md0
+    fstype: xfs
+    run_file: /var/run/db_storage_config
+  cluster_environment: prod
+  timezone: UTC
+  authorization: !map:Mash 
+    sudo: !map:Mash 
+      groups: []
+
+      users: []
+
+  chef: !map:Mash 
+    log_level: info
+    server_url: https://api.opscode.com/organizations/pharmmd
+    webui_enabled: false
+    client_splay: "20"
+    umask: "0022"
+    cache_path: /srv/chef/cache
+    solr_heap_size: 256M
+    client_interval: 1800
+    serve_path: /srv/chef
+    url_type: http
+    backup_path: /srv/chef/backup
+    init_style: runit
+    validation_client_name: chef-validator
+    webui_port: "4040"
+    client_version: 0.9.12
+    run_path: /srv/chef/run
+    path: /srv/chef
+    server_fqdn: chef.compute-1.internal
+    server_version: 0.9.12
+    server_port: "4000"
+    log_dir: /var/log/chef
+  node_name: workers
+  rvm: !map:Mash 
+    default_ruby: false
+  app_environment: prod
+index_id: 
+name: workers1.prod
+normal_attrs: !map:Mash 
+  runit: !map:Mash 
+    chpst_bin: /usr/bin/chpst
+    sv_bin: /usr/bin/sv
+    service_dir: /etc/service
+    sv_dir: /etc/sv
+  nginx: !map:Mash 
+    dir: /etc/nginx
+    binary: /usr/sbin/nginx
+    user: www-data
+    log_dir: /var/log/nginx
+  tags: []
+
+  full_node_name: workers1.prod
+  aws: !map:Mash 
+    ebs_volume: !map:Mash 
+      app_ebs_volume: !map:Mash 
+        volume_id: vol-0cc75764
+  bluepill: !map:Mash 
+    version: 0.0.44
+    pid_dir: /var/run/bluepill
+    config_dir: /etc/bluepill
+    log_dir: /var/log/bluepill
+  search: apps
+override_attrs: !map:Mash {}
+
+run_list: !ruby/object:Chef::RunList 
+  run_list_items: 
+  - !ruby/object:Chef::RunList::RunListItem 
+    name: prod
+    type: :role
+  - !ruby/object:Chef::RunList::RunListItem 
+    name: base
+    type: :role
+  - !ruby/object:Chef::RunList::RunListItem 
+    name: workers_master_pharmmd
+    type: :role
+run_state: 
+  :template_cache: {}
+
+  :seen_recipes: {}
+
+  :seen_attributes: {}
+

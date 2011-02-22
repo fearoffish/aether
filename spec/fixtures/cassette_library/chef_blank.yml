@@ -1,0 +1,51 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://api.opscode.com:443/organizations/pharmmd_staging/search/node?q=name:**&sort=&start=0&rows=1000
+    body: 
+    headers: 
+      accept: 
+      - application/json
+      x-ops-sign: 
+      - version=1.0
+      x-ops-userid: 
+      - fearoffish
+      x-ops-timestamp: 
+      - "2011-02-08T01:58:34Z"
+      x-ops-content-hash: 
+      - 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+      x-ops-authorization-1: 
+      - PPOGrstEbTNkQT0fUJP+IkMRNbBEJCNlMkvPJR2NPwaz0L4HfqA0TRmMJOMG
+      x-ops-authorization-2: 
+      - U+s0XLgJwhlVVVA6nQTEgqrLAQt4rS+l2aY6z9gJ2kDZxDXTupiwH8jgwmdp
+      x-ops-authorization-3: 
+      - wFipGbTo9wwfw9lww2i3Lr4h08HC7aX/TkxjqA4kk7TmaLbn4gPvlYUQoqrO
+      x-ops-authorization-4: 
+      - wtNNI0EjVkWPnQSfallUDw2Fz+NDNEmD4mLwNGQ2GSQsAdmfG3K34cReot8r
+      x-ops-authorization-5: 
+      - Z3RghrsJe4IXKXwX0p5JjhzS/fUaVpQdVoKtV6vpTJxvYLxfk+4dDpwfqbUT
+      x-ops-authorization-6: 
+      - hNr65l7Nf3We+sy04Fb65xyo8Z6BYcocymglDA9I8Q==
+      host: 
+      - api.opscode.com:443
+      x-chef-version: 
+      - 0.9.12
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      server: 
+      - nginx/0.8.33
+      date: 
+      - Tue, 08 Feb 2011 01:58:35 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      status: 
+      - 200 OK
+    body: "{\"total\":0,\"start\":0,\"rows\":[]}"
+    http_version: "1.1"
+
