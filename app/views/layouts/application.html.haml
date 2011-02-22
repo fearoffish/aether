@@ -7,4 +7,9 @@
     = javascript_include_tag :defaults
     = csrf_meta_tag
   %body
-    = yield
+    #header
+    #main
+      = yield
+    #footer
+      #version
+        Aether #{App.version}
