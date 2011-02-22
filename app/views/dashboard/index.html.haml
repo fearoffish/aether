@@ -7,3 +7,5 @@
         .node
           .name= node.name
           .ssh_link= link_to('ssh', "ssh://#{node.public_ips.first}")
+          - node.public_ips.each do |public_ip|
+            .public_ip= public_ip
