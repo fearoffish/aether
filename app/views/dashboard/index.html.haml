@@ -2,10 +2,10 @@
 - @clusters.each do |cluster|
   .cluster
     .name #{cluster.name}
-    .nodes
+    %table.nodes
       - cluster.nodes.each do |node|
-        .node
-          .name= node.name
-          .ssh_link= link_to('ssh', "ssh://#{node.public_ips.first}")
+        %tr.node
+          %td.name= node.name
+          %td.ssh_link= link_to('ssh', "ssh://#{node.public_ips.first}")
           - node.public_ips.each do |public_ip|
-            .public_ip= public_ip
+            %td.public_ip= public_ip
