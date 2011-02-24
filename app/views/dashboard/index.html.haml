@@ -1,11 +1,17 @@
-%h1 Clusters
-- @clusters.each do |cluster|
-  .cluster
-    .name #{cluster.name}
-    %table.nodes
-      - cluster.nodes.each do |node|
-        %tr.node
-          %td.name= node.name
-          %td.ssh_link= link_to('ssh', "ssh://#{node.public_ips.first}")
-          - node.public_ips.each do |public_ip|
-            %td.public_ip= public_ip
+.span-24.last
+  - @clusters.each do |cluster|
+    .Section
+      .SectionHeading
+        = cluster.name
+      .SectionContent
+        %table.cluster.DataTable
+          %tr
+            %th Node
+            %th
+            %th
+          - cluster.nodes.each do |node|
+            %tr.node
+              %td.name= node.name
+              %td.ssh_link= link_to('ssh', "ssh://#{node.public_ips.first}")
+              - node.public_ips.each do |public_ip|
+                %td.public_ip= public_ip

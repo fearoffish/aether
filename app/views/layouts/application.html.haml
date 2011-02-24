@@ -3,13 +3,20 @@
 -ie_html :class => 'no-js' do
   = render :partial => 'layouts/head'
   %body{ :lang => 'en', :class => "#{controller.controller_name}" }
-    #container
-      %header#header
-        = render :partial => 'layouts/header'
-      #main{ :role => 'main' }
-        = render :partial => 'layouts/flashes'
-        = yield
-      %footer#footer
+    #BodyContainer.container
+      #HeaderContainer.span-24.last
+        #Header
+          = render :partial => 'layouts/header'
+      #MenuContainer.span-24.last
+        #MainMenu
+          = render :partial => 'layouts/main_menu'
+      #MainContentContainer.span-24.last
+        #MainContent
+          = render :partial => 'layouts/flashes'
+          = yield
+    #PageFooterContainer
+      #Footer
         = render :partial => 'layouts/footer'
+
     -# Javascript at the bottom for fast page loading
     = render :partial => 'layouts/javascripts'
