@@ -6,6 +6,8 @@ gem 'sqlite3'
 gem 'app'
 gem 'jquery-rails', '>= 0.2.6'
 gem 'haml'
+gem 'compass'
+gem 'html5-boilerplate'
 gem 'chef', '0.9.12'
 
 group :development, :test do
