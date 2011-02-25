@@ -1,0 +1,14 @@
+require 'bundler/capistrano'
+
+set :application, "aether"
+set :repository,  "git://github.com/fearoffish/aether.git"
+
+set :scm, :git
+set :keep_releases, 5
+
+set :user,          "deploy"
+set :rails_env,     "production"
+set :branch,        "master"
+set :deploy_to,     "CHANGEME"
+
+ssh_options[:forward_agent] = true
