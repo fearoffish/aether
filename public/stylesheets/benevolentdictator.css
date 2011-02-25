@@ -160,7 +160,6 @@ a {
   padding-top: 10px;
   padding-bottom: 15px;
   border-collapse: collapse;
-  
 }
 .DataTable th {
   background-color: #dddddd;
@@ -171,19 +170,34 @@ a {
 
 .DataTable td {
   border-bottom: solid 1px #eeeeee;
-  
 }
+
+.DataTable td.name {
+  width: 65%;
+}
+.DataTable td.ssh_link {
+  width: 10%;
+  text-align: right;
+}
+.DataTable td.public_ip {
+  width: 15%;
+  text-align: right;
+}
+.DataTable td.instance_id {
+  width: 10%;
+  text-align: right;
+}
+
 .DataTable tr:hover {
-  color:#ffffff;
-  background-color: #385b7b;
-  background-image: -moz-linear-gradient(100% 100% 90deg, #385b7b,#48739c);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#48739c), to(#385b7b));
+  background-color: #eee;
+/*  background-image: -moz-linear-gradient(100% 100% 90deg, #ddd,#eee);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ddd), to(#eee));*/
   -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4);
   -moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);
 }
         
 .DataTable tr:hover a {
-  color: #ffffff;
+  color: #333;
   border-bottom: solid 1px #ffffff;
 }
 .PaginationWidget {
