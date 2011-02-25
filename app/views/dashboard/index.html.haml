@@ -5,10 +5,6 @@
         = cluster.name
       .SectionContent
         %table.cluster.DataTable
-          %tr
-            %th Node
-            %th
-            %th
           - cluster.nodes.each do |node|
             %tr.node
               %td.name= node.name
