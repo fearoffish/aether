@@ -6,6 +6,7 @@ module Cloud
     def initialize
       super
       late_load_deps
+      config[:config_file] ||= App.knife_config_file
       configure_chef
       @q = ::Chef::Search::Query.new
       @results = { 
