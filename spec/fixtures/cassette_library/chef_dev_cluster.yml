@@ -2,7 +2,7 @@
 - !ruby/struct:VCR::HTTPInteraction 
   request: !ruby/struct:VCR::Request 
     method: :get
-    uri: https://api.opscode.com:443/organizations/pharmmd_staging/search/node?q=name:**&sort=&start=0&rows=1000
+    uri: https://api.opscode.com:443/organizations/test/search/node?q=name:**&sort=&start=0&rows=1000
     body: 
     headers: 
       accept: 

@@ -1,6 +1,3 @@
-ENV['AETHER_USER'] ||= 'admin'
-ENV['AETHER_PASS'] ||= 'changeme'
-
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
