@@ -189,16 +189,15 @@ a {
 }
 
 .DataTable tr:hover {
-  color:#ffffff;
-  background-color: #385b7b;
-  background-image: -moz-linear-gradient(100% 100% 90deg, #385b7b,#48739c);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#48739c), to(#385b7b));
+  background-color: #eee;
+/*  background-image: -moz-linear-gradient(100% 100% 90deg, #ddd,#eee);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ddd), to(#eee));*/
   -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4);
   -moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);
 }
         
 .DataTable tr:hover a {
-  color: #ffffff;
+  color: #333;
   border-bottom: solid 1px #ffffff;
 }
 .PaginationWidget {

@@ -1,3 +1,16 @@
+- content_for :javascripts do
+  :javascript
+    $(document).ready(function(){
+        $(".DataTable tr:even").addClass("even");
+        $(".DataTable tr:not(.even)").hide();
+        $(".DataTable tr:first-child").show();
+        
+        $(".DataTable tr.even").click(function(){
+            $(this).next("tr").toggle();
+            $(this).find(".arrow").toggleClass("up");
+        });
+    });
+
 .span-24.last
   - @clusters.each do |cluster|
     .Section
@@ -15,4 +28,12 @@
               - node.public_ips.each do |public_ip|
                 %td.public_ip= public_ip
               %td.instance_id
-                =node.instance_id
+                = node.instance_id
+              %td
+                .arrow
+            %tr
+              %td{:colspan => "6"}
+                %ul
+                  %li 
+                    internal ip 
+                    = node.private_ips.first
