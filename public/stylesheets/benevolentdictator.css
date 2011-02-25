@@ -160,7 +160,6 @@ a {
   padding-top: 10px;
   padding-bottom: 15px;
   border-collapse: collapse;
-  
 }
 .DataTable th {
   background-color: #dddddd;
@@ -171,8 +170,20 @@ a {
 
 .DataTable td {
   border-bottom: solid 1px #eeeeee;
-  
 }
+
+.DataTable td.name {
+  width: 70%;
+}
+.DataTable td.ssh_link {
+  width: 10%;
+  text-align: right;
+}
+.DataTable td.public_ip {
+  width: 20%;
+  text-align: right;
+}
+
 .DataTable tr:hover {
   color:#ffffff;
   background-color: #385b7b;
