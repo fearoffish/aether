@@ -9,45 +9,38 @@ Aether is that web management interface for our Chef server managed servers.  It
 ## Features
 
 * List the servers currently running
-* Show ssh links to those servers
+* Show ssh and http links to those servers
+* Show ip addresses and instance ids.
 
 ## Planned Features
 
-* Better documentation on how to start, or an auto setup tool (this readme is out of date)
 * A better auth system, possibly?
 * Manage servers (or clusters of servers) with a web interface
 * Monitor logs of the Chef runs from those servers (using [http://pusherapp.com][7])
 * Show estimated costs of servers
 
-## Assumptions
-
-To group the servers by cluster, I set a `node[:cluster_environment]` variable on each server I start, for example if I have a staging cluster, I set this to staging using a staging role.  If you don't have this variable, then there's no way of knowing how your servers are clustered and they'll just be in one big list.
-
-If you configure your clusters in another way, that's okay.  You can make a `config/app/production.rb` file, and configure it in there.  The default is set in `config/app.rb`, and we can override it in our `production.rb` file like so:
-
-    class App < Configurable
-      config.cluster_identification = lambda {|node,name| node[:my_attribute] == name }
-    end
-
 ## Getting Started
 
-Most of the options that can be configured, are done so per `RAILS_ENV`.
+Aether uses `Chef::Knife` to communicate with your Chef Server, it is configured in exactly the same manner.  By default Aether will look for an `/etc/chef/knife.rb` file, which should contain your `Chef::Knife` details, you can use `knife configure -i` to create one.  Obviously you will need your private keys and other details at hand.
 
-I currently only use this locally, and to get it going it needs a Chef knife config file in your home directory, specifically in `~/.chef/knife.rb`.  This works just like Chef itself, so if you have that configured it should just work.  So, in short:
+Once that's configured and placed in `/et/chef/knife.rb` (this is configurable, see below) then you just need to run through the configuration options (see below) and you're good to go.
 
-* Setup a `knife.rb` in `~/.chef/`
-* Start the Rails server
+## Configurable Options
 
-## What does it desperately need?
+We use an App config system to set up configurable options, default options are set in `config/app.rb`.  If you want to override something, then you create a file in `config/app/` that matches your `RAILS_ENV`.  e.g. `config/app/production.rb`.  There is a sample in that folder for you to copy and change.  Here's an example of how you would override the method we use for grouping nodes into clusters.
 
-* Some design because it's ugly has hell right now!
+    class App < Configurable
+      # node: the node information as given by Chef
+      # name: the name that is being compared against  e.g. 'production'
+      config.cluster_identification = lambda {|node,name| node[:cluster_name] == name }
+    end
 
 Links
 -----
 
 * [aether][4]: Aether homepage
 * [chef][1]:   Chef, the automated deployment tool
-* [opscode][2]
+* [rails][2]:  Ruby on Rails
 
 
 [1]:  http://github.com/opscode/chef
@@ -57,3 +50,4 @@ Links
 [5]:  http://www.pharmmd.com/
 [6]:  http://aws.amazon.com/ec2/
 [7]:  http://pusherapp.com
+[8]:  
