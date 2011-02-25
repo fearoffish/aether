@@ -173,14 +173,18 @@ a {
 }
 
 .DataTable td.name {
-  width: 70%;
+  width: 65%;
 }
 .DataTable td.ssh_link {
   width: 10%;
   text-align: right;
 }
 .DataTable td.public_ip {
-  width: 20%;
+  width: 15%;
+  text-align: right;
+}
+.DataTable td.instance_id {
+  width: 10%;
   text-align: right;
 }
 

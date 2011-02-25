@@ -7,7 +7,12 @@
         %table.cluster.DataTable
           - cluster.nodes.each do |node|
             %tr.node
-              %td.name= node.name
+              %td.name
+                = node.name
+              %td.http_link
+                = link_to "http", "http://#{node.public_ips.first}/", :target => "_blank"
               %td.ssh_link= link_to('ssh', "ssh://#{node.public_ips.first}")
               - node.public_ips.each do |public_ip|
                 %td.public_ip= public_ip
+              %td.instance_id
+                =node.instance_id
