@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "dashboard/index.html.erb" do
   context "with a dev cluster" do
     before do
-      VCR.insert_cassette('chef_dev_cluster', :record => :new_episodes)
+      VCR.insert_cassette('chef_dev_cluster', :record => :none)
       assign(:clusters, Cloud::Control.get_clusters)
     end
 

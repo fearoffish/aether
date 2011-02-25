@@ -1,6 +1,3 @@
-ENV['AETHER_USER'] ||= 'admin'
-ENV['AETHER_PASS'] ||= 'changeme'
-
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
@@ -43,7 +40,7 @@ module Aether
     config.filter_parameters += [:password]
 
     def self.version
-      "0.0.3"
+      "0.0.4"
     end
   end
 end
