@@ -99,6 +99,7 @@ GEM
       thor (~> 0.14.4)
     json (1.4.6)
     json_pure (1.5.1)
+    kgio (2.3.2)
     launchy (0.3.7)
       configuration (>= 0.0.5)
       rake (>= 0.8.1)
@@ -179,6 +180,9 @@ GEM
     treetop (1.4.9)
       polyglot (>= 0.3.1)
     tzinfo (0.3.24)
+    unicorn (3.4.0)
+      kgio (~> 2.2)
+      rack
     uuidtools (2.1.2)
     vcr (1.6.0)
     webrat (0.7.3)
@@ -211,5 +215,6 @@ DEPENDENCIES
   shoulda
   spork
   sqlite3
+  unicorn
   vcr
   webrat

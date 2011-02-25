@@ -27,4 +27,5 @@ end
 
 group :deployment do
   gem 'capistrano'
+  gem 'unicorn'
 end
