@@ -24,3 +24,7 @@ group :development, :test do
   gem 'fakeweb'
   gem 'webrat'
 end
+
+group :deployment do
+  gem 'capistrano'
+end
