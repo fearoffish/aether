@@ -12,13 +12,13 @@
     });
 
 .span-24.last
-  - @clusters.each do |cluster|
+  - @clusters.sort_by {|c| c.name }.each do |cluster|
     .Section
       .SectionHeading
         = cluster.name
       .SectionContent
         %table.cluster.DataTable
-          - cluster.nodes.each do |node|
+          - cluster.nodes.sort_by {|n| n.name }.each do |node|
             %tr.node
               %td.name
                 = node.name
