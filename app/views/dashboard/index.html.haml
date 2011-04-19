@@ -4,7 +4,7 @@
         $(".DataTable tr:even").addClass("even");
         $(".DataTable tr:not(.even)").hide();
         $(".DataTable tr:first-child").show();
-        
+
         $(".DataTable tr.even").click(function(){
             $(this).next("tr").toggle();
             $(this).find(".arrow").toggleClass("up");
@@ -34,6 +34,6 @@
             %tr
               %td{:colspan => "6"}
                 %ul
-                  %li 
-                    internal ip 
+                  %li
+                    internal ip
                     = node.private_ips.first

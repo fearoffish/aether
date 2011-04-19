@@ -19,3 +19,4 @@ pickle-email-*.html
 .rvmrc
 config/app/*.rb
 config/deploy.rb
+.rvmrc
