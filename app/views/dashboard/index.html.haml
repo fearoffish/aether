@@ -4,7 +4,7 @@
         $(".DataTable tr:even").addClass("even");
         $(".DataTable tr:not(.even)").hide();
         $(".DataTable tr:first-child").show();
-        
+
         $(".DataTable tr.even").click(function(){
             $(this).next("tr").toggle();
             $(this).find(".arrow").toggleClass("up");
@@ -12,13 +12,13 @@
     });
 
 .span-24.last
-  - @clusters.each do |cluster|
+  - @clusters.sort_by {|c| c.name }.each do |cluster|
     .Section
       .SectionHeading
         = cluster.name
       .SectionContent
         %table.cluster.DataTable
-          - cluster.nodes.each do |node|
+          - cluster.nodes.sort_by {|n| n.name }.each do |node|
             %tr.node
               %td.name
                 = node.name
@@ -34,6 +34,6 @@
             %tr
               %td{:colspan => "6"}
                 %ul
-                  %li 
-                    internal ip 
+                  %li
+                    internal ip
                     = node.private_ips.first

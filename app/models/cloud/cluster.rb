@@ -25,7 +25,7 @@ module Cloud
         end
         clusters << cluster
       end
-      clusters
+      clusters.flatten
     end
 
     private

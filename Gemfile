@@ -9,6 +9,9 @@ gem 'haml'
 gem 'compass'
 gem 'html5-boilerplate'
 gem 'chef', '0.9.12'
+gem 'net-ssh-multi'
+gem 'rehabilitate', '0.3.16'
+gem 'pony'
 
 group :development, :test do
   gem 'capybara'
