@@ -12,7 +12,7 @@
     });
 
 .span-24.last
-  - @clusters.sort_by {|c| c.name }.each do |cluster|
+  - @clusters.sort_by {|c| c.name || "" }.each do |cluster|
     .Section
       .SectionHeading
         = cluster.name
