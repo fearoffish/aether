@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.4'
+gem 'rails', '3.1.0.rc1'
 gem 'sqlite3'
 
 gem 'app'
@@ -8,12 +8,17 @@ gem 'jquery-rails', '>= 0.2.6'
 gem 'haml'
 gem 'compass'
 gem 'html5-boilerplate'
-gem 'chef', '0.9.12'
+gem 'chef', '0.10.0.rc.2'
 gem 'net-ssh-multi'
-gem 'rehabilitate', '0.3.16'
 gem 'pony'
 
 group :development, :test do
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-bundler'
+  gem 'guard-coffeescript'
+  gem 'rb-fsevent'
+  gem 'livereload'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'cucumber-rails'
