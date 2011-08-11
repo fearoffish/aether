@@ -1,14 +1,12 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc4'
+gem "rake", "0.9.2"
+gem 'rails', '3.1.0.rc5'
 gem 'sqlite3'
 
 gem 'app'
-gem 'jquery-rails', '>= 0.2.6'
 gem 'haml'
-gem 'compass'
-gem 'html5-boilerplate'
-gem 'chef', '0.10.0.rc.2'
+gem 'chef', '0.10.4.rc.6'
 gem 'net-ssh-multi'
 gem 'pony'
 
@@ -24,8 +22,7 @@ group :development, :test do
   gem 'cucumber-rails'
   gem 'cucumber'
   gem 'rspec-rails'
-  gem 'autotest'
-  gem 'spork'
+  gem 'spork', '0.9.0rc7'
   gem 'launchy'
   gem 'shoulda'
   gem 'vcr'
