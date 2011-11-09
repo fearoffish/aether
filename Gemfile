@@ -1,12 +1,16 @@
 source 'http://rubygems.org'
 
 gem "rake", "0.9.2"
-gem 'rails', '3.1.0.rc5'
-gem 'sqlite3'
+gem 'rails', '3.1.1.rc1'
+gem 'mongo', '1.4.0'
+gem 'bson_ext', '1.4.0'
+gem 'mongo_mapper'
 
 gem 'app'
+gem 'compass'
+gem 'html5-boilerplate'
 gem 'haml'
-gem 'chef', '0.10.4.rc.6'
+gem 'chef', '0.10.4'
 gem 'net-ssh-multi'
 gem 'pony'
 
