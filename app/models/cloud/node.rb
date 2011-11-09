@@ -3,10 +3,17 @@ module Cloud
     attr_reader :name, :cluster_name, :full_node_name, :public_ips, :private_ips, :instance_id
 
     def initialize(data)
-      @name, @cluster_name = data.name.split(".").first, data.name.split(".")[1..-1].join(".")
+      @name, @cluster_name = data.name.split(".").first, data
       @public_ips = data["cloud"]["public_ips"] rescue ["blank"]
       @private_ips = data["cloud"]["private_ips"] rescue ["blank"]
       @instance_id = data["ec2"]["instance_id"] if data["ec2"]
+      self
+    end
+
+    def self.extract_cluster_name( node )
+      cluster_name = node.name.split(".")[1..-1].join(".")
+      Rails.logger.debug "EXTRACT: Given #{node.name} I got #{cluster_name}"
+      cluster_name
     end
 
   end
