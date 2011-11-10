@@ -1,6 +1,5 @@
 source 'http://rubygems.org'
 
-gem "rake", "0.9.2"
 gem 'rails', '3.1.1.rc1'
 gem 'mongo', '1.4.0'
 gem 'bson_ext', '1.4.0'
