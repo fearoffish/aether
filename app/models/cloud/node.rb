@@ -4,7 +4,12 @@ module Cloud
 
     def initialize(data)
       @name, @cluster_name = data.name.split(".").first, data
-      @public_ip = data.ipaddress
+      @public_ip = case
+      when data["ec2"]
+        data["ec2"]["public_ipv4"]
+      else
+        data.ipaddress
+      end
       @instance_id = data["ec2"]["instance_id"] if data["ec2"]
       self
     end
