@@ -27,13 +27,11 @@
               %td.ssh_link= link_to('ssh', "ssh://#{node.public_ips.first}")
               - node.public_ips.each do |public_ip|
                 %td.public_ip= public_ip
-              %td.instance_id
-                = node.instance_id
               %td
                 .arrow
             %tr
               %td{:colspan => "6"}
                 %ul
                   %li
-                    internal ip
-                    = node.private_ips.first
+                    instance id
+                    = node.instance_id
