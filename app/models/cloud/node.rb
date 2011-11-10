@@ -1,10 +1,10 @@
 module Cloud
   class Node
-    attr_reader :name, :cluster_name, :full_node_name, :public_ips, :private_ips, :instance_id
+    attr_reader :name, :cluster_name, :full_node_name, :public_ip, :private_ips, :instance_id
 
     def initialize(data)
       @name, @cluster_name = data.name.split(".").first, data
-      @public_ips = data.ipaddress
+      @public_ip = data.ipaddress
       @instance_id = data["ec2"]["instance_id"] if data["ec2"]
       self
     end

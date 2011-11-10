@@ -23,10 +23,9 @@
               %td.name
                 = node.name
               %td.http_link
-                = link_to "http", "http://#{node.public_ips.first}/", :target => "_blank"
-              %td.ssh_link= link_to('ssh', "ssh://#{node.public_ips.first}")
-              - node.public_ips.each do |public_ip|
-                %td.public_ip= public_ip
+                = link_to "http", "http://#{node.public_ip}/", :target => "_blank"
+              %td.ssh_link= link_to('ssh', "ssh://#{node.public_ip}")
+              %td.public_ip= node.public_ip
               %td
                 .arrow
             %tr
