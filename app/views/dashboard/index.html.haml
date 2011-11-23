@@ -1,36 +1,79 @@
-- content_for :javascripts do
-  :javascript
-    $(document).ready(function(){
-        $(".DataTable tr:even").addClass("even");
-        $(".DataTable tr:not(.even)").hide();
-        $(".DataTable tr:first-child").show();
+- content_for :title do
+  - @page_title
+#page-heading
+  %h1
+    = @page_title
 
-        $(".DataTable tr.even").click(function(){
-            $(this).next("tr").toggle();
-            $(this).find(".arrow").toggleClass("up");
-        });
-    });
+%table#content-table( border="0" width="100%" cellpadding="0" cellspacing="0" )
+  %tr
+    %th.sized( rowspan="3" )
+      %img( src="#{asset_path "shared/side_shadowleft.jpg"}" width="20" height="300" alt="" )
+    %th.topleft
+    %td#tbl-border-top
+      &nbsp;
+    %th.topright
+    %th.sized( rowspan="3" )
+      %img( src="#{asset_path "shared/side_shadowright.jpg"}" width="20" height="300" alt="")
+  %tr
+    %td#tbl-border-left
+    %td
+      #content-table-inner
+        #table-content
+          %form#mainform( action="" )
+            - @clusters.sort_by {|c| c.name || "" }.each do |cluster|
+              %table#cluster-table( border="0" width="100%" cellpadding="0" cellspacing="0" )
+                %caption
+                  = cluster.name
+                %tr
+                  %th.table-header-repeat.line-left.minwidth-1
+                    <a href="">Node Name</a>
+                  %th.table-header-repeat.line-left
+                    <a href="">SSH Link</a>
+                  %th.table-header-repeat.line-left
+                    <a href="">Web Link</a>
+                  %th.table-header-options.line-left
+                    <a href="">Public IP</a>
+                - cluster.nodes.sort_by {|n| n.name }.each do |node|
+                  %tr{ :class => cycle("", "alternate-row") }
+                    %td.name
+                      = node.name
+                    %td.http_link
+                      = link_to "http", "http://#{node.public_ip}/", :target => "_blank"
+                    %td.ssh_link
+                      = link_to('ssh', "ssh://#{node.public_ip}")
+                    %td.public_ip
+                      = node.public_ip
 
-.span-24.last
-  - @clusters.sort_by {|c| c.name || "" }.each do |cluster|
-    .Section
-      .SectionHeading
-        = cluster.name
-      .SectionContent
-        %table.cluster.DataTable
-          - cluster.nodes.sort_by {|n| n.name }.each do |node|
-            %tr.node
-              %td.name
-                = node.name
-              %td.http_link
-                = link_to "http", "http://#{node.public_ip}/", :target => "_blank"
-              %td.ssh_link= link_to('ssh', "ssh://#{node.public_ip}")
-              %td.public_ip= node.public_ip
-              %td
-                .arrow
-            %tr
-              %td{:colspan => "6"}
-                %ul
-                  %li
-                    instance id
-                    = node.instance_id
+
+        #actions-box
+          <a href="" class="action-slider"></a>
+          #actions-box-slider
+            <a href="" class="action-edit">Edit</a>
+            <a href="" class="action-delete">Delete</a>
+          .clear
+
+        %table#paging-table( border="0" cellpadding="0" cellspacing="0" )
+          %tr
+            %td
+              <a href="" class="page-far-left"></a>
+              <a href="" class="page-left"></a>
+              #page-info
+                Page <strong>1</strong> / 15
+              <a href="" class="page-right"></a>
+              <a href="" class="page-far-right"></a>
+            %td
+              <select  class="styledselect_pages">
+              <option value="">Number of rows</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              </select>
+        .clear
+    %td#tbl-border-right
+  %tr
+    %th.sized.bottomleft
+    %td#tbl-border-bottom
+      &nbsp;
+    %th.sized.bottomright
+.clear
+  &nbsp;
