@@ -1,7 +1,8 @@
 .DS_Store
 *.rbc
 *.sassc
-.sass-cache
+.sass-cache/
+public/assets/
 capybara-*.html
 .rspec
 /.bundle
