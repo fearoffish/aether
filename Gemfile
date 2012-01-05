@@ -6,7 +6,7 @@ gem 'bson_ext', '1.4.0'
 gem 'mongo_mapper'
 
 gem 'app'
-gem 'compass'
+gem 'compass', '~> 0.11.6'
 gem 'html5-boilerplate'
 gem 'haml'
 gem 'chef', '0.10.4'
