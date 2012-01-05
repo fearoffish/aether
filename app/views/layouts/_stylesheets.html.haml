@@ -1,11 +1,6 @@
--# CSS : implied media="all"
-= stylesheet_link_tag 'style', :media => 'all'
-= stylesheet_link_tag 'benevolentdictator.css', :media => 'all'
-= stylesheet_link_tag 'http://cdn.cloudfiles.mosso.com/c29152/BlueprintScreen.css', :media => 'all'
-= stylesheet_link_tag 'http://cdn.cloudfiles.mosso.com/c29152/BlueprintIE.css', :media => 'all'
+= stylesheet_link_tag 'application', :media => 'all'
+<!--[if IE]>
+= stylesheet_link_tag 'pro_dropline_ie', :media => 'all'
+<![endif]-->
 
--# Uncomment if you are specifically targeting less enabled mobile browsers
--#= stylesheet_link_tag 'handheld', :media => 'handheld'
-
--# Append your own using content_for :stylesheets
 = yield :stylesheets

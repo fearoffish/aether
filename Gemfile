@@ -6,14 +6,25 @@ gem 'bson_ext', '1.4.0'
 gem 'mongo_mapper'
 
 gem 'app'
-gem 'compass', :git => 'https://github.com/chriseppstein/compass.git', :ref => 'ea6e15b8a455'
+gem 'compass'
+gem 'html5-boilerplate'
 gem 'haml'
 gem 'chef', '0.10.4'
 gem 'net-ssh-multi'
 gem 'pony'
 gem 'rabl', '~> 0.5.3'
 
-group :development, :test do
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails', "  ~> 3.1.0"
+  gem 'coffee-rails', "~> 3.1.0"
+  gem 'uglifier', '>= 1.0.3'
+end
+
+gem 'jquery-rails'
+
+group :test do
   gem 'guard'
   gem 'guard-rspec'
   gem 'guard-bundler'

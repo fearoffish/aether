@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Aether::Application.config.secret_token = '41626a3b2718440177806de85bf53b8fefe8622241cf0d8b174639d853936a1c634dee8d215272b984bb00b753d279c6bce92f924a512ba3ea522204fb8a1bf2'
+Aether::Application.config.secret_token = '318102be3b091c802cd3ba8ed1bf4f31c76d9614d2f0dd347889a3e86d818c57e54708d818552e4c4f41a1b79e6df8277eb9b572ab5877adc9b434bd9b175025'
