@@ -6,7 +6,7 @@ gem 'bson_ext', '1.4.0'
 gem 'mongo_mapper'
 
 gem 'app'
-gem 'compass', '~> 0.11.6'
+gem 'compass', :git => 'https://github.com/chriseppstein/compass.git', :ref => 'ea6e15b8a455'
 gem 'html5-boilerplate'
 gem 'haml'
 gem 'chef', '0.10.4'
