@@ -56,5 +56,8 @@ Aether::Application.configure do
   config.i18n.fallbacks = true
 
   # Send deprecation notices to registered listeners
-  config.active_support.deprecation = :notify
+  config.active_support.deprecation = :log
+  
+  # dirty hack to try and get around a production issue of HOME being .
+  ENV['HOME'] = nil
 end
