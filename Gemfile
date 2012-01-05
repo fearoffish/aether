@@ -4,6 +4,7 @@ gem 'rails', '3.1.3'
 gem 'mongo', '1.4.0'
 gem 'bson_ext', '1.4.0'
 gem 'mongo_mapper'
+gem 'therubyracer'
 
 gem 'app'
 gem 'compass', '~> 0.11.6'
