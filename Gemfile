@@ -4,6 +4,7 @@ gem 'rails', '3.1.3'
 gem 'mongo', '1.4.0'
 gem 'bson_ext', '1.4.0'
 gem 'mongo_mapper'
+gem 'execjs'
 gem 'therubyracer'
 
 gem 'app'

@@ -280,6 +280,7 @@ DEPENDENCIES
   cucumber
   cucumber-rails
   database_cleaner
+  execjs
   fakeweb
   guard
   guard-bundler
