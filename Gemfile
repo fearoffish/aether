@@ -12,6 +12,7 @@ gem 'haml'
 gem 'chef', '0.10.4'
 gem 'net-ssh-multi'
 gem 'pony'
+gem 'rabl', '~> 0.5.3'
 
 group :development, :test do
   gem 'guard'
