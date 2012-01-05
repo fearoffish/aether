@@ -7,7 +7,6 @@ gem 'mongo_mapper'
 
 gem 'app'
 gem 'compass', :git => 'https://github.com/chriseppstein/compass.git', :ref => 'ea6e15b8a455'
-gem 'html5-boilerplate'
 gem 'haml'
 gem 'chef', '0.10.4'
 gem 'net-ssh-multi'
