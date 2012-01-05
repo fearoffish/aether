@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/chriseppstein/compass.git
+  revision: ea6e15b8a455efabc6efdd5c68195eed5b9fa773
+  ref: ea6e15b8a455
+  specs:
+    compass (0.11.1.ea6e15b)
+      chunky_png (~> 1.1)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -75,10 +85,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.2.0)
-    compass (0.11.6)
-      chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.1)
     cucumber (1.1.4)
       builder (>= 2.1.2)
       diff-lcs (>= 1.1.2)
@@ -118,8 +124,8 @@ GEM
     haml (3.1.4)
     highline (1.6.9)
     hike (1.2.1)
-    html5-boilerplate (1.0.0)
-      compass (>= 0.11.1)
+    html5-boilerplate (0.3.3)
+      compass (>= 0.10.0)
     i18n (0.6.0)
     jquery-rails (1.0.19)
       railties (~> 3.0)
@@ -273,7 +279,7 @@ DEPENDENCIES
   capybara
   chef (= 0.10.4)
   coffee-rails (~> 3.1.0)
-  compass
+  compass!
   cucumber
   cucumber-rails
   database_cleaner
