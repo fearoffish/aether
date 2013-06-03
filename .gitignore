@@ -22,3 +22,4 @@ config/app/*.rb
 config/deploy.rb
 .rvmrc
 .notes
+.powenv
