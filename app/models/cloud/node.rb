@@ -8,7 +8,7 @@ module Cloud
       when data["ec2"]
         data["ec2"]["public_ipv4"]
       else
-        data.ipaddress
+        data.ipaddress rescue ""
       end
       @instance_id = data["ec2"]["instance_id"] if data["ec2"]
       self
